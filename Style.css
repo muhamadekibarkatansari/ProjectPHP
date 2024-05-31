@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    position: relative;
+    background-image: url("img/tampilan.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column; /* Adjusting to column layout */
+    align-items: center;
+    justify-content: center; /* Centering vertically */
+    padding: 0 2%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(38, 119, 151, 0.5);
+    font-weight: bold;
+    margin-bottom: 20px; 
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2px;
+    z-index: 2;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.527); 
+    backdrop-filter: blur(5px);
+}
